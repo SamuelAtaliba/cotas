@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Magic Number - FIIs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador Magic Number</h1>
+        <div>
+            <label for="precoCota">Preço da Cota:</label>
+            <input type="number" id="precoCota" step="0.01" placeholder="Digite o preço da cota">
+        </div>
+        <div>
+            <label for="dividendoCota">Dividendo por Cota:</label>
+            <input type="number" id="dividendoCota" step="0.01" placeholder="Digite o dividendo por cota">
+        </div>
+        <button onclick="calcularMagicNumber()">Calcular Magic Number</button>
+        <div id="resultado"></div>
+        <button id="gerarRelatorio" style="display:none;" onclick="gerarRelatorio()">Gerar Relatório</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
